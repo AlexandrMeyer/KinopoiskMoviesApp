@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		B577F6552715E65200BAFAD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577F6542715E65200BAFAD5 /* AppDelegate.swift */; };
 		B577F6572715E65200BAFAD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577F6562715E65200BAFAD5 /* SceneDelegate.swift */; };
-		B577F6592715E65200BAFAD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577F6582715E65200BAFAD5 /* ViewController.swift */; };
+		B577F6592715E65200BAFAD5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577F6582715E65200BAFAD5 /* DetailViewController.swift */; };
 		B577F65C2715E65200BAFAD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B577F65A2715E65200BAFAD5 /* Main.storyboard */; };
 		B577F65E2715E65600BAFAD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B577F65D2715E65600BAFAD5 /* Assets.xcassets */; };
 		B577F6612715E65600BAFAD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B577F65F2715E65600BAFAD5 /* LaunchScreen.storyboard */; };
+		B577F6692715E6CA00BAFAD5 /* SearchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577F6682715E6CA00BAFAD5 /* SearchListViewController.swift */; };
+		B577F66B2715EFFB00BAFAD5 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577F66A2715EFFB00BAFAD5 /* Movies.swift */; };
+		B577F66D2715F90D00BAFAD5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577F66C2715F90D00BAFAD5 /* NetworkManager.swift */; };
+		B577F66F2715FF6900BAFAD5 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577F66E2715FF6900BAFAD5 /* MovieCell.swift */; };
+		B577F6722717020700BAFAD5 /* MoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577F6712717020700BAFAD5 /* MoviesListViewController.swift */; };
+		B577F67A271ACBE800BAFAD5 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577F679271ACBE800BAFAD5 /* StorageManager.swift */; };
+		B577F6A6271ADEB000BAFAD5 /* KinopoiskMoviesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B577F6A4271ADEB000BAFAD5 /* KinopoiskMoviesApp.xcdatamodeld */; };
+		B577F6A8271C71AA00BAFAD5 /* CoreDataMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B577F6A7271C71A900BAFAD5 /* CoreDataMovieCell.swift */; };
+		B5838B962721441D0081CA4F /* MovieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5838B952721441D0081CA4F /* MovieImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B577F6512715E65200BAFAD5 /* AmazonProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazonProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B577F6512715E65200BAFAD5 /* KinopoiskMoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinopoiskMoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B577F6542715E65200BAFAD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B577F6562715E65200BAFAD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B577F6582715E65200BAFAD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B577F6582715E65200BAFAD5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B577F65B2715E65200BAFAD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B577F65D2715E65600BAFAD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B577F6602715E65600BAFAD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B577F6622715E65600BAFAD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B577F6682715E6CA00BAFAD5 /* SearchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewController.swift; sourceTree = "<group>"; };
+		B577F66A2715EFFB00BAFAD5 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		B577F66C2715F90D00BAFAD5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B577F66E2715FF6900BAFAD5 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		B577F6712717020700BAFAD5 /* MoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewController.swift; sourceTree = "<group>"; };
+		B577F679271ACBE800BAFAD5 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		B577F6A5271ADEB000BAFAD5 /* KinopoiskMoviesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KinopoiskMoviesApp.xcdatamodel; sourceTree = "<group>"; };
+		B577F6A7271C71A900BAFAD5 /* CoreDataMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMovieCell.swift; sourceTree = "<group>"; };
+		B5838B952721441D0081CA4F /* MovieImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +58,7 @@
 		B577F6482715E65200BAFAD5 = {
 			isa = PBXGroup;
 			children = (
-				B577F6532715E65200BAFAD5 /* AmazonProduct */,
+				B577F6532715E65200BAFAD5 /* KinopoiskMoviesApp */,
 				B577F6522715E65200BAFAD5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +66,104 @@
 		B577F6522715E65200BAFAD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B577F6512715E65200BAFAD5 /* AmazonProduct.app */,
+				B577F6512715E65200BAFAD5 /* KinopoiskMoviesApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B577F6532715E65200BAFAD5 /* AmazonProduct */ = {
+		B577F6532715E65200BAFAD5 /* KinopoiskMoviesApp */ = {
+			isa = PBXGroup;
+			children = (
+				B577F6732717118D00BAFAD5 /* Models */,
+				B577F676271711E900BAFAD5 /* Services */,
+				B577F675271711C200BAFAD5 /* ViewControllers */,
+				B577F677271711F800BAFAD5 /* Views */,
+				B577F674271711A200BAFAD5 /* Storyboards */,
+				B577F6782717121A00BAFAD5 /* Sourse */,
+				B577F67E271ACECC00BAFAD5 /* CoreData */,
+				B577F6702716FFE700BAFAD5 /* App */,
+			);
+			path = KinopoiskMoviesApp;
+			sourceTree = "<group>";
+		};
+		B577F6702716FFE700BAFAD5 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				B577F6542715E65200BAFAD5 /* AppDelegate.swift */,
 				B577F6562715E65200BAFAD5 /* SceneDelegate.swift */,
-				B577F6582715E65200BAFAD5 /* ViewController.swift */,
-				B577F65A2715E65200BAFAD5 /* Main.storyboard */,
-				B577F65D2715E65600BAFAD5 /* Assets.xcassets */,
-				B577F65F2715E65600BAFAD5 /* LaunchScreen.storyboard */,
 				B577F6622715E65600BAFAD5 /* Info.plist */,
 			);
-			path = AmazonProduct;
+			path = App;
+			sourceTree = "<group>";
+		};
+		B577F6732717118D00BAFAD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B577F66A2715EFFB00BAFAD5 /* Movies.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B577F674271711A200BAFAD5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B577F65A2715E65200BAFAD5 /* Main.storyboard */,
+				B577F65F2715E65600BAFAD5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B577F675271711C200BAFAD5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B577F6682715E6CA00BAFAD5 /* SearchListViewController.swift */,
+				B577F6582715E65200BAFAD5 /* DetailViewController.swift */,
+				B577F6712717020700BAFAD5 /* MoviesListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B577F676271711E900BAFAD5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B577F66C2715F90D00BAFAD5 /* NetworkManager.swift */,
+				B577F679271ACBE800BAFAD5 /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B577F677271711F800BAFAD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B577F66E2715FF6900BAFAD5 /* MovieCell.swift */,
+				B577F6A7271C71A900BAFAD5 /* CoreDataMovieCell.swift */,
+				B5838B952721441D0081CA4F /* MovieImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B577F6782717121A00BAFAD5 /* Sourse */ = {
+			isa = PBXGroup;
+			children = (
+				B577F65D2715E65600BAFAD5 /* Assets.xcassets */,
+			);
+			path = Sourse;
+			sourceTree = "<group>";
+		};
+		B577F67E271ACECC00BAFAD5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B577F6A4271ADEB000BAFAD5 /* KinopoiskMoviesApp.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B577F6502715E65200BAFAD5 /* AmazonProduct */ = {
+		B577F6502715E65200BAFAD5 /* KinopoiskMoviesApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B577F6652715E65600BAFAD5 /* Build configuration list for PBXNativeTarget "AmazonProduct" */;
+			buildConfigurationList = B577F6652715E65600BAFAD5 /* Build configuration list for PBXNativeTarget "KinopoiskMoviesApp" */;
 			buildPhases = (
 				B577F64D2715E65200BAFAD5 /* Sources */,
 				B577F64E2715E65200BAFAD5 /* Frameworks */,
@@ -82,9 +173,9 @@
 			);
 			dependencies = (
 			);
-			name = AmazonProduct;
+			name = KinopoiskMoviesApp;
 			productName = AmazonProduct;
-			productReference = B577F6512715E65200BAFAD5 /* AmazonProduct.app */;
+			productReference = B577F6512715E65200BAFAD5 /* KinopoiskMoviesApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +193,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B577F64C2715E65200BAFAD5 /* Build configuration list for PBXProject "AmazonProduct" */;
+			buildConfigurationList = B577F64C2715E65200BAFAD5 /* Build configuration list for PBXProject "KinopoiskMoviesApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +206,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B577F6502715E65200BAFAD5 /* AmazonProduct */,
+				B577F6502715E65200BAFAD5 /* KinopoiskMoviesApp */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +229,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B577F6592715E65200BAFAD5 /* ViewController.swift in Sources */,
+				B577F6A8271C71AA00BAFAD5 /* CoreDataMovieCell.swift in Sources */,
+				B577F6A6271ADEB000BAFAD5 /* KinopoiskMoviesApp.xcdatamodeld in Sources */,
+				B577F6592715E65200BAFAD5 /* DetailViewController.swift in Sources */,
 				B577F6552715E65200BAFAD5 /* AppDelegate.swift in Sources */,
+				B577F66B2715EFFB00BAFAD5 /* Movies.swift in Sources */,
+				B5838B962721441D0081CA4F /* MovieImageView.swift in Sources */,
+				B577F67A271ACBE800BAFAD5 /* StorageManager.swift in Sources */,
+				B577F66D2715F90D00BAFAD5 /* NetworkManager.swift in Sources */,
+				B577F6692715E6CA00BAFAD5 /* SearchListViewController.swift in Sources */,
+				B577F66F2715FF6900BAFAD5 /* MovieCell.swift in Sources */,
 				B577F6572715E65200BAFAD5 /* SceneDelegate.swift in Sources */,
+				B577F6722717020700BAFAD5 /* MoviesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +391,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ANDCT3J259;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AmazonProduct/Info.plist;
+				INFOPLIST_FILE = KinopoiskMoviesApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,7 +402,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = AlexandrMeyer.AmazonProduct;
+				PRODUCT_BUNDLE_IDENTIFIER = AlexandrMeyer.KinopoiskMoviesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,7 +419,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ANDCT3J259;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AmazonProduct/Info.plist;
+				INFOPLIST_FILE = KinopoiskMoviesApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +430,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = AlexandrMeyer.AmazonProduct;
+				PRODUCT_BUNDLE_IDENTIFIER = AlexandrMeyer.KinopoiskMoviesApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,7 +441,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B577F64C2715E65200BAFAD5 /* Build configuration list for PBXProject "AmazonProduct" */ = {
+		B577F64C2715E65200BAFAD5 /* Build configuration list for PBXProject "KinopoiskMoviesApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B577F6632715E65600BAFAD5 /* Debug */,
@@ -350,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B577F6652715E65600BAFAD5 /* Build configuration list for PBXNativeTarget "AmazonProduct" */ = {
+		B577F6652715E65600BAFAD5 /* Build configuration list for PBXNativeTarget "KinopoiskMoviesApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B577F6662715E65600BAFAD5 /* Debug */,
@@ -360,6 +460,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B577F6A4271ADEB000BAFAD5 /* KinopoiskMoviesApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B577F6A5271ADEB000BAFAD5 /* KinopoiskMoviesApp.xcdatamodel */,
+			);
+			currentVersion = B577F6A5271ADEB000BAFAD5 /* KinopoiskMoviesApp.xcdatamodel */;
+			path = KinopoiskMoviesApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B577F6492715E65200BAFAD5 /* Project object */;
 }
