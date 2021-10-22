@@ -9,7 +9,6 @@ import Foundation
 
 struct Movies: Codable {
     let movies: [Film]
-    let pagination: Pagination
 }
 
 struct Film: Codable {
@@ -29,16 +28,6 @@ struct Film: Codable {
         case year
         case actors
         case directors
-    }
-}
-
-struct Pagination: Codable {
-    let currentPage: String?
-    let endPage: String?
-    
-    enum CodingKeys: String, CodingKey {
-        case currentPage = "current_page"
-        case endPage = "end_page"
     }
 }
 

@@ -67,4 +67,3 @@ class NetworkManager {
         return try? Data(contentsOf: url)
     }
 }
-
