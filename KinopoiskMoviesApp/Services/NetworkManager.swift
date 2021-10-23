@@ -60,10 +60,4 @@ class NetworkManager {
             }
         }.resume()
     }
-    
-//    func fetchPoster(from url: String?) -> Data? {
-//        guard let stringURL = url else { return nil }
-//        guard let url = URL(string: "https:\(stringURL)") else { return nil }
-//        return try? Data(contentsOf: url)
-//    }
 }
