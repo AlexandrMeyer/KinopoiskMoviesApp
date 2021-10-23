@@ -21,9 +21,9 @@ class MovieImageView: UIImageView {
         }
         
         // Если изображения нет, то грузим его из сети
-        NetworkManager.shared.fetchPoster(from: url) { data, response in
-            self.image = UIImage(data: data)
-            self.saveDataToCache(with: data, and: response)
+        NetworkManager.shared.fetchPoster(from: url) { [unowned self] data, response in
+            image = UIImage(data: data)
+            saveDataToCache(with: data, and: response)
         }
     }
     

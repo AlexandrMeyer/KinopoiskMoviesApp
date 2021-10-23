@@ -52,18 +52,18 @@ class NetworkManager {
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
-            
+
             guard url == response.url else { return }
-            
+
             DispatchQueue.main.async {
                 completion(data, response)
             }
         }.resume()
     }
     
-    func fetchPoster(from url: String?) -> Data? {
-        guard let stringURL = url else { return nil }
-        guard let url = URL(string: "https:\(stringURL)") else { return nil }
-        return try? Data(contentsOf: url)
-    }
+//    func fetchPoster(from url: String?) -> Data? {
+//        guard let stringURL = url else { return nil }
+//        guard let url = URL(string: "https:\(stringURL)") else { return nil }
+//        return try? Data(contentsOf: url)
+//    }
 }

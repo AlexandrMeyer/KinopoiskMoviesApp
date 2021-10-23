@@ -60,12 +60,12 @@ class SearchListViewController: UITableViewController {
     }
     
     private func fetchMoviesInfo() {
-        NetworkManager.shared.fetchMoviesInfo { result in
+        NetworkManager.shared.fetchMoviesInfo { [unowned self] result in
             switch result {
             case .success(let movie):
                 DispatchQueue.main.async {
-                    self.movies = movie
-                    self.tableView.reloadData()
+                    movies = movie
+                    tableView.reloadData()
                 }
             case .failure(let error):
                 print (error)

@@ -44,7 +44,7 @@ class MoviesListViewController: UITableViewController {
             case .failure(let error):
                 print(error.localizedDescription)
             }
-            self.tableView.reloadData()
+            tableView.reloadData()
         }
     }
     

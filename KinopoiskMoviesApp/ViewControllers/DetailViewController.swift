@@ -38,7 +38,6 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func addToFavoriteButtonTapped(_ sender: UIBarButtonItem) {
-        
         StorageManager.shared.save(self.film)
         showAlert(with: self.film.title)
     }
@@ -56,7 +55,7 @@ class DetailViewController: UIViewController {
     }
     
     private func showAlert(with title: String) {
-        let alertController = UIAlertController(title: title, message: "Add to Favirite", preferredStyle: .alert)
+        let alertController = UIAlertController(title: title, message: "Add to Favorite", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
