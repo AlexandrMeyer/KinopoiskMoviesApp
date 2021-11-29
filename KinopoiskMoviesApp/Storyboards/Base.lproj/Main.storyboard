@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ivN-x9-KAc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ivN-x9-KAc">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,17 +30,23 @@
                                                 <constraint firstAttribute="width" constant="80" id="bAQ-vd-vlp"/>
                                             </constraints>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uBF-vb-Ysj">
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uBF-vb-Ysj">
                                             <rect key="frame" x="98" y="11" width="178.5" height="78"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmV-tt-ehj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="178.5" height="39.5"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="178.5" height="29"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehE-Gb-Hjm">
+                                                    <rect key="frame" x="0.0" y="34" width="178.5" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyQ-Id-UGf">
-                                                    <rect key="frame" x="0.0" y="54.5" width="178.5" height="23.5"/>
+                                                    <rect key="frame" x="0.0" y="57" width="178.5" height="21"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -59,6 +65,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="directorLabel" destination="ehE-Gb-Hjm" id="hhq-DV-LoX"/>
                                     <outlet property="posterImageView" destination="c0P-OB-875" id="t09-N8-F53"/>
                                     <outlet property="titleLabel" destination="wmV-tt-ehj" id="PTX-9K-CKC"/>
                                     <outlet property="yearLabel" destination="OyQ-Id-UGf" id="GgT-xc-WQw"/>
@@ -71,11 +78,22 @@
                             <outlet property="delegate" destination="fF7-CC-Nez" id="jRs-G0-hWG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Movies List" id="Hbs-tk-oSV"/>
+                    <navigationItem key="navigationItem" title="Movies List" id="Hbs-tk-oSV">
+                        <barButtonItem key="leftBarButtonItem" title="Prev." id="mSV-5P-ff8">
+                            <connections>
+                                <action selector="previouslyPageButtonTapped:" destination="fF7-CC-Nez" id="dPG-cT-Pie"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Next page" id="UfE-K2-bLq">
+                            <connections>
+                                <action selector="nextPageButtonTapped:" destination="fF7-CC-Nez" id="S8L-Lm-kAx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oHw-sD-a4U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="230.625" y="797.53521126760563"/>
+            <point key="canvasLocation" x="231" y="798"/>
         </scene>
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
@@ -206,17 +224,23 @@
                                                 <constraint firstAttribute="width" constant="80" id="WYQ-Dn-edu"/>
                                             </constraints>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="anC-Xc-Qxx">
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="anC-Xc-Qxx">
                                             <rect key="frame" x="100" y="11" width="194" height="78"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qZ-tW-y8t">
-                                                    <rect key="frame" x="0.0" y="0.0" width="194" height="37"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="194" height="29"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAC-Lu-ARh">
+                                                    <rect key="frame" x="0.0" y="34" width="194" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fno-xa-zCm">
-                                                    <rect key="frame" x="0.0" y="56" width="194" height="22"/>
+                                                    <rect key="frame" x="0.0" y="57" width="194" height="21"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -235,6 +259,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="directotLabel" destination="QAC-Lu-ARh" id="QuZ-wn-7sX"/>
                                     <outlet property="posterImageView" destination="wGW-8L-x3c" id="9Sp-Rd-Ebg"/>
                                     <outlet property="titleLabel" destination="9qZ-tW-y8t" id="bRY-7Y-KnV"/>
                                     <outlet property="yearLabel" destination="Fno-xa-zCm" id="6Sx-SQ-0f9"/>

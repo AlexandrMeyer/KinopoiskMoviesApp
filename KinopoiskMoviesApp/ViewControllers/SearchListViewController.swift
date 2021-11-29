@@ -49,7 +49,17 @@ class SearchListViewController: UITableViewController {
         let film = isFiltering ? filteredFilm[indexPath.row] : movies?.movies[indexPath.row]
         detailVC.film = film
     }
-    
+
+    @IBAction func nextPageButtonTapped(_ sender: Any) {
+        NetworkManager.shared.currentPage += 1
+        fetchMoviesInfo()
+    }
+
+    @IBAction func previouslyPageButtonTapped(_ sender: Any) {
+        NetworkManager.shared.currentPage -= 1
+        fetchMoviesInfo()
+    }
+
     private func setupSearchController() {
         navigationItem.searchController = searchController
         searchController.searchResultsUpdater = self

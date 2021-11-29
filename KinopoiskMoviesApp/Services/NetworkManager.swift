@@ -16,8 +16,11 @@ enum NetworkError: Error {
 class NetworkManager {
     
     static let shared = NetworkManager()
+    var currentPage = Int.random(in: 1...1000)
     
-    private let apiKinopoisk = "https://api.kinopoisk.cloud/movies/all/page/666/token/7d35e318283a3c4e7b4b4ff049a57fc4"
+    private var apiKinopoisk: String {
+    "https://cloud-api.kinopoisk.dev/movies/all/page/\(currentPage)/token/3532f15744651d4229ace2cdc90359f3"
+    }
     
     private init() {}
     
@@ -52,9 +55,9 @@ class NetworkManager {
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
-
-            guard url == response.url else { return }
-
+            
+            guard url.lastPathComponent == response.url?.lastPathComponent else { return }
+            
             DispatchQueue.main.async {
                 completion(data, response)
             }
